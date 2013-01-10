@@ -1,0 +1,63 @@
+<html>
+<script src="code.js" type="text/javascript"></script>
+<body>
+</body>
+  <script>
+  console.log(match('B', '*'));
+console.log(match('AB', 'A*'));
+console.log(!match('BB', 'A*'));
+console.log(match('A', '*A'));
+console.log(match('BA', '*A'));
+console.log(match('BCA', '*A'));
+console.log(!match('BCAD', '*A'));
+console.log(match('ABA', 'A*A'));
+console.log(match('AA', 'A*A'));
+console.log(match('ABCA', 'A*A'));
+console.log(!match('ABCAD', 'A*A'));
+console.log(!match('DABCA', 'A*A'));
+console.log(match('A', '*A*'));
+console.log(match('AA', '*A*'));
+console.log(match('BA', '*A*'));
+console.log(match('AB', '*A*'));
+console.log(match('BAB', '*A*'));
+console.log(!match('DSDFESG', '*A*'));
+console.log(match('', '?'));
+console.log(match('A', '?'));
+console.log(!match('AB', '?'));
+console.log(match('A', '?A'));
+console.log(match('BA', '?A'));
+console.log(!match('BBA', '?A'));
+console.log(match('A', 'A?'));
+console.log(match('AB', 'A?'));
+console.log(!match('ABB', 'A?'));
+console.log(!match('B', 'A?'));
+console.log(match('A', '?A?'));
+console.log(match('BA', '?A?'));
+console.log(match('AB', '?A?'));
+console.log(match('BAB', '?A?'));
+console.log(!match('BAAA', '?A?'));
+console.log(!match('AAAA', '?A?'));
+console.log(match('AA', 'A?A'));
+console.log(match('ABA', 'A?A'));
+console.log(!match('ABBA', 'A?A'));
+console.log(match('AA', 'A*?A'));
+console.log(match('ABCDA', 'A*?A'));
+console.log(match('ABA', 'A*?A'));
+console.log(!match('AAB', 'A*?A'));
+console.log(match('A', 'A*?'));
+console.log(match('ABBBD', 'A*?'));
+console.log(!match('BBBD', 'A*?'));
+console.log(match('A', 'A?????'));
+console.log(match('AB', 'A?????'));
+console.log(match('ABBBBB', 'A?????'));
+console.log(!match('ABBBBBB', 'A?????'));
+console.log(match('A', 'A***'));
+console.log(match('AB', 'A***'));
+console.log(match('A', 'A***?'));
+console.log(match('ABG', 'A***?'));
+console.log(!match('BG', 'A***?'));
+console.log(match('A', '?A????'));
+console.log(match('AB', '?A????'));
+console.log(!match('BBA', '?A????'));
+</script>
+</html>
