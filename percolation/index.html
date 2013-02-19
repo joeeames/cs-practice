@@ -1,0 +1,26 @@
+<html ng-app='percolater'>
+  <head>
+    <link rel='stylesheet' href='static/bootstrap/css/bootstrap.min.css' >
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+    <script type="text/javascript" src="static/js/vendor/underscore-min.js"></script>
+    <script type="text/javascript" src="static/js/app.js"></script>
+    <script type="text/javascript" src="static/js/PercolateCtrl.js"></script>
+    <script type="text/javascript" src="static/js/ResultsCtrl.js"></script>
+    <script src="static/js/vendor/angular-resource.js"></script>
+
+  </head>
+  <body >
+
+
+    <div ng-controller="PercolateCtrl">
+
+      <a href="/">Run</a> |
+      <a href="results">Results</a> |
+
+      <div ng-view></div>
+
+    </div>
+
+
+  </body>
+</html>
